@@ -1,6 +1,5 @@
 import time
 import asyncio
-import random
 
 from pydantic import BaseModel, validator
 from fastapi import FastAPI
