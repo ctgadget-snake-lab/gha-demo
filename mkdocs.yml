@@ -1,0 +1,24 @@
+site_name: gha-demo project docs
+
+theme: 
+  name: material
+  palette:
+    primary: blue
+    accent: red
+  font:
+    text: Ubuntu
+  icon:
+    logo: material/lightning-bolt-circle
+
+plugins: 
+  - search
+  - mkdocstrings
+
+nav:
+  - Home: index.md
+  - tutorials.md
+  - How-To Guides: how-to-guides.md
+  - Code Reference: code/reference.md
+  - explanation.md
+
+
