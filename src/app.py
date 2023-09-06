@@ -16,6 +16,8 @@ class Item(BaseModel):
         price (float): The price of the item.
 
     """
+    name: str
+    price: float
 
     @validator("price")
     def price_must_be_positive(cls, value):
