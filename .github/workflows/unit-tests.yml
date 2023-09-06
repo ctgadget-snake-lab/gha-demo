@@ -22,7 +22,7 @@ jobs:
           python -m pip install -r dev-requirements.txt
       - name: Test with pytest
         run: |
-          flake8
+          ruff check .
 
   build:
     strategy:
