@@ -16,6 +16,7 @@ class Item(BaseModel):
         price (float): The price of the item.
 
     """
+
     name: str
     price: float
 
@@ -44,7 +45,8 @@ def root():
     Root endpoint that returns a simple message.
 
     Returns:
-        dict: A dictionary containing a "message" key with the value "hello world again".
+        dict: A dictionary containing a "message" key 
+        with the value "hello world again".
     """
     return {"message": "hello world again"}
 
@@ -83,7 +85,8 @@ def sleep_slow():
     Endpoint that sleeps for 1 second synchronously and then returns a status message.
 
     Returns:
-        dict: A dictionary containing a "status" key with the value "done" after sleeping.
+        dict: A dictionary containing a "status" key 
+        with the value "done" after sleeping.
     """
     _ = time.sleep(1)
     return {"status": "done"}
@@ -95,7 +98,8 @@ async def sleep_fast():
     Endpoint that sleeps for 1 second asynchronously and then returns a status message.
 
     Returns:
-        dict: A dictionary containing a "status" key with the value "done" after sleeping.
+        dict: A dictionary containing a "status" key 
+        with the value "done" after sleeping.
     """
     _ = await asyncio.sleep(1)
     return {"status": "done"}
